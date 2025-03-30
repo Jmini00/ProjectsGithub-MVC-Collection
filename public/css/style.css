@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,700;);
+
+html, body {
+  background-color: #e6dcdc;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+#navbarResponsive a:hover {
+    color: red;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.5);
+
+}
+
+@keyframes flip {
+  0%,80% {transform: rotateY(360deg);}
+}
+
+/*@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}*/
+
+.navbar-brand span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 8s infinite;
+  animation-delay: calc(.4s * var(--i));
+}
